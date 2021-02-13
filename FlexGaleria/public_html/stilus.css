@@ -1,19 +1,39 @@
 @charset "utf-8";
 
-main{
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
+body{margin:0;}
+
+main{ 
+    margin: auto;
 }
 
 main, nav, article, header, section, footer{
     border: 1px solid grey;
+    box-sizing: border-box;
+    padding: 10px; 
 }
 
 section{
+    flex: 1 0 25%;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
     
 }
 
-header nav{
-    flex-direction: row-reverse;
+footer nav{
+    display: flex;
+    justify-content: center;
 }
+
+nav div:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+} 

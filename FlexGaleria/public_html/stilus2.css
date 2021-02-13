@@ -5,6 +5,7 @@ body{margin:0;}
 main{ 
     margin: auto;
     padding: 10px;
+    background: black;
 }
 
 main, nav, article, header, section, footer{
@@ -22,6 +23,7 @@ article{
     flex-direction: row;
     flex-wrap: wrap;
     background: white;
+    align-content: center;
 }
 
 nav{
@@ -39,6 +41,9 @@ nav div:nth-child(2){
     flex-direction: row-reverse;
 } 
 
+section img{
+    width: 100%;
+}
 
 
 @media screen and (max-width:800px){
@@ -60,3 +65,4 @@ nav div:nth-child(2){
     flex-direction: column;
 } 
 }
+
